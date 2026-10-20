@@ -1,0 +1,237 @@
+{
+  "canonical_zip_sha256": "ba4e5b3c8f9364b4e2eb44ac56ddb85e70459c876a8524fa9f8b3d897901cd4b",
+  "canonical_archive_files": 81,
+  "published_original_files": 38,
+  "mapping": "archive path -> artefact/<archive path>; no flattening; admitted original file bytes unchanged",
+  "selection_scope": "Runnable software, original technical docs, self-contained code tests, benchmark/checkpoint scripts; not the full private submission package",
+  "files": [
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/.gitignore",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/.gitignore",
+      "bytes": 174,
+      "sha256": "91bcd39868533372560c949193192ddfad63c84844c458baf5ad51ec6eaf5623"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/.python-version",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/.python-version",
+      "bytes": 8,
+      "sha256": "7cdb5b4e894f2f9670bbc710cfb0a4fdfdb4f9d1257d84f69c2d5df3df3d1e67"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/README.md",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/README.md",
+      "bytes": 3854,
+      "sha256": "6a20c1dfb7c6272cfa0afa9b03fd2713bdb98f3e7061cab72c78db6f76aacaf3"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/__init__.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/__init__.py",
+      "bytes": 59,
+      "sha256": "f864da7e3adad33ea0a9e73cf0a29643d0bdc0d62033e893a756281694d693fe"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/data.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/data.py",
+      "bytes": 9113,
+      "sha256": "7cba0189e91a719227abcd380670266d211c27dd8e22f85f4ffdfe9c375a552e"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/db/__init__.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/db/__init__.py",
+      "bytes": 69,
+      "sha256": "6e9184f8dcd6760a135c19e75320cce432e830f4d8fe094c480e7e58dae36ea5"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/db/schema.sql",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/db/schema.sql",
+      "bytes": 3414,
+      "sha256": "042c1e6898d4f5417697d8a1dd3db49cd4c85c156b3ef1234acd7dedfe686e89"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/db/seed.curated.json",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/db/seed.curated.json",
+      "bytes": 13132,
+      "sha256": "62b6ab3c6af27f1e57dd865d3a04dcc0f6d54d7f87a176b7edbb3722e33cb16a"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/db/seed.synthetic.json",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/db/seed.synthetic.json",
+      "bytes": 9117,
+      "sha256": "906549b7a9b27c3de27bfd8c94435c42f538ac2e2f6521d8b1ce85a6a486c40d"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/db/source_inventory.curated.json",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/db/source_inventory.curated.json",
+      "bytes": 1995,
+      "sha256": "1cd009f4faaa67efbe1841fa3b41e3fac374130eaac471d7afcbd02605e6c81b"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/engine.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/engine.py",
+      "bytes": 5197,
+      "sha256": "e55fed6bdb19a0bbd2196845f0d6ef6b26a25de069392cb9cb715c485626fe05"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/interpreter.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/interpreter.py",
+      "bytes": 4691,
+      "sha256": "4deb7732c068f926f93934a7464851141e029c828bafa0b66f8f8128e937914e"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/main.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/main.py",
+      "bytes": 3167,
+      "sha256": "2836c9bd0903dcf6cfffa0fd157a0e22672c665307d78bbc5fc8bbed12e63b05"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/models.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/models.py",
+      "bytes": 479,
+      "sha256": "79dfcabc30c1b5490be2c6283ebfc54a2ce6073136adf417bccbd4fd88a7eef5"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/pipeline.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/pipeline.py",
+      "bytes": 2050,
+      "sha256": "771bbc1c65aefbbe5c1cb12d912574707875f984cf354086007d95f19476c5af"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/repository.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/repository.py",
+      "bytes": 3756,
+      "sha256": "fee961ddfd8631eb9f59bd69661640d71e5acc7c344f7c02db0ad7ca1f2faa7e"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/settings.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/settings.py",
+      "bytes": 654,
+      "sha256": "19b568fe0f2b36ce3b81c640654fb426d6d046fa8dc7b0b886e19edfa09bdf5a"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/static/app.js",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/static/app.js",
+      "bytes": 5924,
+      "sha256": "0de46d59a2d01faaaf78a04d10ec772ed60de5eb7b5f0d6f9ffbc19438e7616b"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/static/index.html",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/static/index.html",
+      "bytes": 2929,
+      "sha256": "5834a8b2f1a2347beed1b00f22dd9b30dba336821ee5b0199acfa0b90a92380e"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/app/static/styles.css",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/app/static/styles.css",
+      "bytes": 3437,
+      "sha256": "a4c518a72fa560f55bdcf1d665882203c635962ae9a307a9c95986bfdf46d8fa"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/docs/ARCHITECTURE_OVERVIEW.md",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/docs/ARCHITECTURE_OVERVIEW.md",
+      "bytes": 1515,
+      "sha256": "a26bcb8504ecd2b1f6fbda8675b91805bfeb050924532fad3602c701aeea27f0"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/docs/DATA_MODEL.md",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/docs/DATA_MODEL.md",
+      "bytes": 1456,
+      "sha256": "cff892a78221e0279a450bb7123cc541a68cad3b64e234ad21f83d69c979ace4"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/docs/SCORING_WORKED_EXAMPLE.md",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/docs/SCORING_WORKED_EXAMPLE.md",
+      "bytes": 1015,
+      "sha256": "07c4b67f6f51a22bb3e61c75a47b4d63ac19444e2fd453ab33220db30f4033ee"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/docs/SOURCE_CURATION.md",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/docs/SOURCE_CURATION.md",
+      "bytes": 2736,
+      "sha256": "9c18ca236522f44baacfdf0b002dc9323fcbcdb0b7fe9eb78a2e39c86ffcf906"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/docs/UI_VERIFICATION.md",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/docs/UI_VERIFICATION.md",
+      "bytes": 1375,
+      "sha256": "249a2fb701e18f91232407decf46414be7bd9708ad143265628f1d92b26d361a"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/pyproject.toml",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/pyproject.toml",
+      "bytes": 420,
+      "sha256": "5e8ec765d64ef4e1117d596073fe64df4fe7b067c8c91c56e6b08b2bfa071f6f"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/requirements-lock.txt",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/requirements-lock.txt",
+      "bytes": 377,
+      "sha256": "0b4049beb6991179487b257908c5321ab61cede94c7a75e15060ae890aa1855c"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/requirements.txt",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/requirements.txt",
+      "bytes": 62,
+      "sha256": "22d8f1a1eedc2efce3586b7769364c247f5bde46e596d43fd9cfb6010917caba"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/scripts/run_benchmark.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/scripts/run_benchmark.py",
+      "bytes": 2006,
+      "sha256": "eb1b2b6bf0fb8ca3abdaf0dcead810cd7184bb8bb31de5c72a4d3bc79e34c41b"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/scripts/run_final_checkpoint.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/scripts/run_final_checkpoint.py",
+      "bytes": 3486,
+      "sha256": "5306aab680fcbd40b7a6da65d9fbc57ac787fcb89837ef48a9fc3d91cf0204dd"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/tests/test_api_ui.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/tests/test_api_ui.py",
+      "bytes": 3716,
+      "sha256": "43ccf135d59ad7d3a0d94865c538d97619f37e4e27d699ebaf258369cb414240"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/tests/test_core_checkpoint.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/tests/test_core_checkpoint.py",
+      "bytes": 2597,
+      "sha256": "c7d71da8fb372ad61e5baa7fd45b82d6ad3601b962a29e9cfdf43f4e45200cd0"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/tests/test_curated_data.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/tests/test_curated_data.py",
+      "bytes": 3648,
+      "sha256": "bbe24caf659c81a0d3d9dd3a4dfc243d76c53091be6bdb18bb02e3efbb8c64f8"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/tests/test_data_model.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/tests/test_data_model.py",
+      "bytes": 4410,
+      "sha256": "918d96b41cefc17b194ffece8f05c4f87fdf858550165e8ea3a0ad17877e0824"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/tests/test_engine.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/tests/test_engine.py",
+      "bytes": 5387,
+      "sha256": "7167d74c3beb1dfe2c4e4f6606a3d0376fe9250d88f80c45bfe24a92980b8afa"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/tests/test_final_boundary_regression.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/tests/test_final_boundary_regression.py",
+      "bytes": 2165,
+      "sha256": "9567c4d08f9d93e775ab48aceb95d3d80331ea4c9db051082faf147485eb2183"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/tests/test_interpreter_pipeline.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/tests/test_interpreter_pipeline.py",
+      "bytes": 4431,
+      "sha256": "c5545b3fd8b557205f3e084178d6ab566e956c87523cd3116585610ae0ff72d5"
+    },
+    {
+      "archive_path": "P17888_Artefact_Submission/artefact/tests/test_scaffold.py",
+      "repository_path": "artefact/P17888_Artefact_Submission/artefact/tests/test_scaffold.py",
+      "bytes": 676,
+      "sha256": "ba926a9e3ec50bd09a1004785078633f142028dfeb0af2fb96f1094fbeb43a15"
+    }
+  ]
+}

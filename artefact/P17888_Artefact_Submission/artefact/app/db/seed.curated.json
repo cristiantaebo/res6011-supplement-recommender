@@ -1,0 +1,80 @@
+{
+  "dataset": {"version_id": "curated-v1", "created_date": "2026-08-08", "status": "active", "source_inventory_hash": "1cd009f4faaa67efbe1841fa3b41e3fac374130eaac471d7afcbd02605e6c81b", "notes": "Small public-secondary demonstration dataset; non-medical attributes only"},
+  "sources": [
+    {"source_id": "src_myprotein_impact_whey", "source_type": "product_page", "title": "Impact Whey Protein Powder", "publisher": "Myprotein", "public_url": "https://www.myprotein.com/p/sports-nutrition/impact-whey-protein-powder/10530943/", "accessed_date": "2026-08-08", "synthetic": false, "licence_or_use_note": "Public product information paraphrased minimally for academic prototype evidence", "evidence_path": "app/db/source_inventory.curated.json"},
+    {"source_id": "src_solgar_gelatin_capsules", "source_type": "product_page", "title": "Solgar Gelatin Capsules", "publisher": "Solgar", "public_url": "https://www.solgar.com/products/solgar-gelatin-capsules", "accessed_date": "2026-08-08", "synthetic": false, "licence_or_use_note": "Public product information paraphrased minimally for academic prototype evidence", "evidence_path": "app/db/source_inventory.curated.json"},
+    {"source_id": "src_centrum_multigummies_antioxidants", "source_type": "product_page", "title": "Centrum MultiGummies Multi + Antioxidants", "publisher": "Centrum", "public_url": "https://www.centrum.com/content/cf-consumer-healthcare/bp-wellness-centrum/en_US/home/products-version-b/Women/centrum-multigummies-multi-antioxidants.html", "accessed_date": "2026-08-08", "synthetic": false, "licence_or_use_note": "Public product information paraphrased minimally for academic prototype evidence", "evidence_path": "app/db/source_inventory.curated.json"},
+    {"source_id": "source_project_method", "source_type": "synthetic", "title": "Project-authored controlled matching language and weights", "publisher": "P17888 project", "public_url": "synthetic://project-method", "accessed_date": "2026-08-08", "synthetic": true, "licence_or_use_note": "Project-owned non-medical rule and boundary text", "evidence_path": "09_Index/DECISION_ENGINE_SPEC.md"}
+  ],
+  "terms": [
+    {"term_id": "goal_mixable", "category": "wellness_goal", "display_label": "Mixable option", "active": true},
+    {"term_id": "goal_capsule", "category": "wellness_goal", "display_label": "Capsule option", "active": true},
+    {"term_id": "goal_chewable", "category": "wellness_goal", "display_label": "Chewable option", "active": true},
+    {"term_id": "goal_tablet", "category": "wellness_goal", "display_label": "Tablet option", "active": true},
+    {"term_id": "preference_vegetarian", "category": "preference", "display_label": "Vegetarian labelled", "active": true},
+    {"term_id": "preference_gluten_free", "category": "preference", "display_label": "Gluten-free labelled", "active": true},
+    {"term_id": "preference_public_directions", "category": "preference", "display_label": "Public directions available", "active": true},
+    {"term_id": "format_powder", "category": "format", "display_label": "Powder", "active": true},
+    {"term_id": "format_capsule", "category": "format", "display_label": "Capsule", "active": true},
+    {"term_id": "format_gummy", "category": "format", "display_label": "Gummy", "active": true}
+  ],
+  "aliases": [
+    {"alias_id": "ca001", "term_id": "goal_mixable", "normalised_phrase": "mixable option", "priority": 10},
+    {"alias_id": "ca002", "term_id": "goal_mixable", "normalised_phrase": "mixable", "priority": 5},
+    {"alias_id": "ca003", "term_id": "goal_capsule", "normalised_phrase": "capsule option", "priority": 10},
+    {"alias_id": "ca004", "term_id": "goal_capsule", "normalised_phrase": "portable option", "priority": 1},
+    {"alias_id": "ca005", "term_id": "goal_chewable", "normalised_phrase": "chewable option", "priority": 10},
+    {"alias_id": "ca006", "term_id": "goal_chewable", "normalised_phrase": "portable option", "priority": 1},
+    {"alias_id": "ca007", "term_id": "goal_tablet", "normalised_phrase": "tablet option", "priority": 10},
+    {"alias_id": "ca008", "term_id": "preference_vegetarian", "normalised_phrase": "vegetarian labelled", "priority": 10},
+    {"alias_id": "ca009", "term_id": "preference_vegetarian", "normalised_phrase": "vegetarian", "priority": 5},
+    {"alias_id": "ca010", "term_id": "preference_gluten_free", "normalised_phrase": "gluten free labelled", "priority": 10},
+    {"alias_id": "ca011", "term_id": "preference_gluten_free", "normalised_phrase": "gluten free", "priority": 5},
+    {"alias_id": "ca012", "term_id": "preference_public_directions", "normalised_phrase": "public directions available", "priority": 10},
+    {"alias_id": "ca013", "term_id": "format_powder", "normalised_phrase": "powder", "priority": 10},
+    {"alias_id": "ca014", "term_id": "format_capsule", "normalised_phrase": "capsule", "priority": 10},
+    {"alias_id": "ca015", "term_id": "format_gummy", "normalised_phrase": "gummy", "priority": 10}
+  ],
+  "products": [
+    {"product_id": "real_myprotein_whey_powder", "display_name": "Impact Whey Protein Powder", "predefined_summary": "The public product page identifies this record as a ready-to-mix powder and labels it suitable for vegetarians.", "predefined_recommendation_text": "This predefined record matches the selected non-medical format or label preference. Review the current product label and source page; this prototype does not establish suitability, safety or effectiveness.", "format_id": "format_powder", "active": true, "source_id": "src_myprotein_impact_whey"},
+    {"product_id": "real_solgar_gelatin_capsules", "display_name": "Solgar Gelatin Capsules", "predefined_summary": "The public product page identifies this dietary-supplement record as capsules and labels it gluten-free.", "predefined_recommendation_text": "This predefined record matches the selected non-medical format or label preference. Review the current product label and source page; this prototype does not establish suitability, safety or effectiveness.", "format_id": "format_capsule", "active": true, "source_id": "src_solgar_gelatin_capsules"},
+    {"product_id": "real_centrum_multigummies_antioxidants", "display_name": "Centrum MultiGummies Multi + Antioxidants", "predefined_summary": "The public product page identifies this record as a gummy multivitamin and labels it gluten-free.", "predefined_recommendation_text": "This predefined record matches the selected non-medical format or label preference. Review the current product label and source page; this prototype does not establish suitability, safety or effectiveness.", "format_id": "format_gummy", "active": true, "source_id": "src_centrum_multigummies_antioxidants"}
+  ],
+  "recipes": [
+    {"recipe_id": "cr001", "product_id": "real_myprotein_whey_powder", "predefined_recipe_text": "The source page suggests mixing 30 g with 250 ml of water or milk; check the current label for the selected variant.", "source_id": "src_myprotein_impact_whey", "active": true},
+    {"recipe_id": "cr002", "product_id": "real_solgar_gelatin_capsules", "predefined_recipe_text": "The source page lists three capsules daily, preferably at mealtime, or as directed by a healthcare practitioner; check the current label.", "source_id": "src_solgar_gelatin_capsules", "active": true},
+    {"recipe_id": "cr003", "product_id": "real_centrum_multigummies_antioxidants", "predefined_recipe_text": "The source page lists two gummies daily and says not to exceed suggested use; check the current label.", "source_id": "src_centrum_multigummies_antioxidants", "active": true}
+  ],
+  "product_terms": [
+    {"product_id": "real_myprotein_whey_powder", "term_id": "goal_mixable", "relationship": "matches", "source_id": "src_myprotein_impact_whey"},
+    {"product_id": "real_myprotein_whey_powder", "term_id": "preference_vegetarian", "relationship": "matches", "source_id": "src_myprotein_impact_whey"},
+    {"product_id": "real_myprotein_whey_powder", "term_id": "preference_public_directions", "relationship": "matches", "source_id": "src_myprotein_impact_whey"},
+    {"product_id": "real_myprotein_whey_powder", "term_id": "format_powder", "relationship": "matches", "source_id": "src_myprotein_impact_whey"},
+    {"product_id": "real_solgar_gelatin_capsules", "term_id": "goal_capsule", "relationship": "matches", "source_id": "src_solgar_gelatin_capsules"},
+    {"product_id": "real_solgar_gelatin_capsules", "term_id": "preference_gluten_free", "relationship": "matches", "source_id": "src_solgar_gelatin_capsules"},
+    {"product_id": "real_solgar_gelatin_capsules", "term_id": "preference_public_directions", "relationship": "matches", "source_id": "src_solgar_gelatin_capsules"},
+    {"product_id": "real_solgar_gelatin_capsules", "term_id": "format_capsule", "relationship": "matches", "source_id": "src_solgar_gelatin_capsules"},
+    {"product_id": "real_centrum_multigummies_antioxidants", "term_id": "goal_chewable", "relationship": "matches", "source_id": "src_centrum_multigummies_antioxidants"},
+    {"product_id": "real_centrum_multigummies_antioxidants", "term_id": "preference_gluten_free", "relationship": "matches", "source_id": "src_centrum_multigummies_antioxidants"},
+    {"product_id": "real_centrum_multigummies_antioxidants", "term_id": "preference_public_directions", "relationship": "matches", "source_id": "src_centrum_multigummies_antioxidants"},
+    {"product_id": "real_centrum_multigummies_antioxidants", "term_id": "format_gummy", "relationship": "matches", "source_id": "src_centrum_multigummies_antioxidants"}
+  ],
+  "scoring_rules": [
+    {"rule_id": "crule_goal_mixable", "term_id": "goal_mixable", "relationship": "matches", "weight": 5, "predefined_reason_template": "Matches the selected mixable-format goal.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_goal_capsule", "term_id": "goal_capsule", "relationship": "matches", "weight": 5, "predefined_reason_template": "Matches the selected capsule-format goal.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_goal_chewable", "term_id": "goal_chewable", "relationship": "matches", "weight": 5, "predefined_reason_template": "Matches the selected chewable-format goal.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_goal_tablet", "term_id": "goal_tablet", "relationship": "matches", "weight": 5, "predefined_reason_template": "Matches the selected tablet-format goal.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_pref_vegetarian", "term_id": "preference_vegetarian", "relationship": "matches", "weight": 3, "predefined_reason_template": "The source page carries the selected vegetarian label.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_pref_gluten_free", "term_id": "preference_gluten_free", "relationship": "matches", "weight": 3, "predefined_reason_template": "The source page carries the selected gluten-free label.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_pref_directions", "term_id": "preference_public_directions", "relationship": "matches", "weight": 3, "predefined_reason_template": "The source page provides public suggested-use text.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_format_powder", "term_id": "format_powder", "relationship": "matches", "weight": 2, "predefined_reason_template": "The predefined record uses the selected powder format.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_format_capsule", "term_id": "format_capsule", "relationship": "matches", "weight": 2, "predefined_reason_template": "The predefined record uses the selected capsule format.", "active": true, "source_id": "source_project_method"},
+    {"rule_id": "crule_format_gummy", "term_id": "format_gummy", "relationship": "matches", "weight": 2, "predefined_reason_template": "The predefined record uses the selected gummy format.", "active": true, "source_id": "source_project_method"}
+  ],
+  "boundary_patterns": [
+    {"boundary_id": "cb001", "normalised_phrase": "diagnose", "boundary_code": "DIAGNOSTIC_REQUEST", "predefined_response": "This prototype cannot diagnose or provide medical advice. Please consult a qualified healthcare professional.", "active": true},
+    {"boundary_id": "cb002", "normalised_phrase": "treat", "boundary_code": "TREATMENT_REQUEST", "predefined_response": "This prototype cannot diagnose or provide medical advice. Please consult a qualified healthcare professional.", "active": true},
+    {"boundary_id": "cb003", "normalised_phrase": "emergency", "boundary_code": "EMERGENCY_REQUEST", "predefined_response": "This prototype cannot handle emergencies. Contact the appropriate emergency service or a qualified healthcare professional.", "active": true},
+    {"boundary_id": "cb004", "normalised_phrase": "medical advice", "boundary_code": "MEDICAL_ADVICE_REQUEST", "predefined_response": "This prototype cannot diagnose or provide medical advice. Please consult a qualified healthcare professional.", "active": true}
+  ]
+}

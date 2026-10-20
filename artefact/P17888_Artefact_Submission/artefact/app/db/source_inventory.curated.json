@@ -1,0 +1,31 @@
+{
+  "data_version": "curated-v1",
+  "accessed_date": "2026-08-08",
+  "selection_rule": "Official public product pages; only name, dosage form, explicit dietary label and suggested-use text were selected. Efficacy, disease, diagnosis, treatment, safety and suitability claims were excluded.",
+  "sources": [
+    {
+      "source_id": "src_myprotein_impact_whey",
+      "publisher": "Myprotein",
+      "title": "Impact Whey Protein Powder",
+      "public_url": "https://www.myprotein.com/p/sports-nutrition/impact-whey-protein-powder/10530943/",
+      "selected_fields": ["product name", "ready-to-mix powder form", "suitable for vegetarians label", "mix 30 g with 250 ml water or milk suggested-use text"],
+      "excluded_fields": ["performance, recovery, muscle, health, popularity, certification and marketing claims", "price, reviews and availability"]
+    },
+    {
+      "source_id": "src_solgar_gelatin_capsules",
+      "publisher": "Solgar",
+      "title": "Solgar Gelatin Capsules",
+      "public_url": "https://www.solgar.com/products/solgar-gelatin-capsules",
+      "selected_fields": ["product name", "capsule form", "gluten-free label", "three capsules daily preferably at mealtime suggested-use text"],
+      "excluded_fields": ["quality and manufacturing marketing claims", "warnings beyond the general current-label reminder"]
+    },
+    {
+      "source_id": "src_centrum_multigummies_antioxidants",
+      "publisher": "Centrum",
+      "title": "Centrum MultiGummies Multi + Antioxidants",
+      "public_url": "https://www.centrum.com/content/cf-consumer-healthcare/bp-wellness-centrum/en_US/home/products-version-b/Women/centrum-multigummies-multi-antioxidants.html",
+      "selected_fields": ["product name", "gummy multivitamin form", "gluten-free label", "two gummies daily and do not exceed suggested use"],
+      "excluded_fields": ["immune, brain, vitality, cellular, antioxidant-effect and other health/efficacy claims", "gender targeting and marketing claims"]
+    }
+  ]
+}

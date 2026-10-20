@@ -1,0 +1,72 @@
+{
+  "dataset": {"version_id": "synthetic-v1", "created_date": "2026-08-08", "status": "active", "source_inventory_hash": "synthetic-inventory-v1", "notes": "Neutral project-owned fixture for deterministic verification"},
+  "sources": [
+    {"source_id": "synthetic_001", "source_type": "synthetic", "title": "Project-owned neutral synthetic fixture", "publisher": "Project fixture", "public_url": "synthetic://project-fixture", "accessed_date": "2026-08-08", "synthetic": true, "licence_or_use_note": "Project-owned synthetic test content", "evidence_path": "app/db/seed.synthetic.json"}
+  ],
+  "terms": [
+    {"term_id": "goal_alpha", "category": "wellness_goal", "display_label": "Goal Alpha", "active": true},
+    {"term_id": "goal_beta", "category": "wellness_goal", "display_label": "Goal Beta", "active": true},
+    {"term_id": "goal_gamma", "category": "wellness_goal", "display_label": "Goal Gamma", "active": true},
+    {"term_id": "preference_alpha", "category": "preference", "display_label": "Preference Alpha", "active": true},
+    {"term_id": "preference_beta", "category": "preference", "display_label": "Preference Beta", "active": true},
+    {"term_id": "preference_gamma", "category": "preference", "display_label": "Preference Gamma", "active": true},
+    {"term_id": "format_alpha", "category": "format", "display_label": "Format Alpha", "active": true},
+    {"term_id": "format_beta", "category": "format", "display_label": "Format Beta", "active": true}
+  ],
+  "aliases": [
+    {"alias_id": "a001", "term_id": "goal_alpha", "normalised_phrase": "goal alpha", "priority": 10},
+    {"alias_id": "a002", "term_id": "goal_alpha", "normalised_phrase": "alpha objective", "priority": 5},
+    {"alias_id": "a003", "term_id": "goal_beta", "normalised_phrase": "goal beta", "priority": 10},
+    {"alias_id": "a004", "term_id": "goal_beta", "normalised_phrase": "shared choice", "priority": 1},
+    {"alias_id": "a005", "term_id": "goal_gamma", "normalised_phrase": "goal gamma", "priority": 10},
+    {"alias_id": "a006", "term_id": "goal_gamma", "normalised_phrase": "shared choice", "priority": 1},
+    {"alias_id": "a007", "term_id": "preference_alpha", "normalised_phrase": "preference alpha", "priority": 10},
+    {"alias_id": "a008", "term_id": "preference_beta", "normalised_phrase": "preference beta", "priority": 10},
+    {"alias_id": "a009", "term_id": "preference_gamma", "normalised_phrase": "preference gamma", "priority": 10},
+    {"alias_id": "a010", "term_id": "format_alpha", "normalised_phrase": "format alpha", "priority": 10},
+    {"alias_id": "a011", "term_id": "format_beta", "normalised_phrase": "format beta", "priority": 10}
+  ],
+  "products": [
+    {"product_id": "p001", "display_name": "Option One", "predefined_summary": "Neutral predefined option one.", "predefined_recommendation_text": "Option One matches the selected predefined criteria.", "format_id": null, "active": true, "source_id": "synthetic_001"},
+    {"product_id": "p002", "display_name": "Option Two", "predefined_summary": "Neutral predefined option two.", "predefined_recommendation_text": "Option Two matches the selected predefined criteria.", "format_id": null, "active": true, "source_id": "synthetic_001"},
+    {"product_id": "p003", "display_name": "Option Three", "predefined_summary": "Neutral predefined option three.", "predefined_recommendation_text": "Option Three matches the selected predefined criteria.", "format_id": null, "active": true, "source_id": "synthetic_001"},
+    {"product_id": "p004", "display_name": "Option Four", "predefined_summary": "Neutral predefined option four.", "predefined_recommendation_text": "Option Four matches the selected predefined criteria.", "format_id": "format_beta", "active": true, "source_id": "synthetic_001"},
+    {"product_id": "p005", "display_name": "Option Five", "predefined_summary": "Neutral predefined option five.", "predefined_recommendation_text": "Option Five matches the selected predefined criteria.", "format_id": null, "active": true, "source_id": "synthetic_001"},
+    {"product_id": "p999", "display_name": "Inactive Option", "predefined_summary": "Inactive neutral fixture.", "predefined_recommendation_text": "Inactive fixture text.", "format_id": null, "active": false, "source_id": "synthetic_001"}
+  ],
+  "recipes": [
+    {"recipe_id": "r001", "product_id": "p001", "predefined_recipe_text": "Follow the predefined directions for Option One.", "source_id": "synthetic_001", "active": true},
+    {"recipe_id": "r002", "product_id": "p002", "predefined_recipe_text": "Follow the predefined directions for Option Two.", "source_id": "synthetic_001", "active": true},
+    {"recipe_id": "r003", "product_id": "p003", "predefined_recipe_text": "Follow the predefined directions for Option Three.", "source_id": "synthetic_001", "active": true},
+    {"recipe_id": "r004", "product_id": "p004", "predefined_recipe_text": "Follow the predefined directions for Option Four.", "source_id": "synthetic_001", "active": true},
+    {"recipe_id": "r005", "product_id": "p005", "predefined_recipe_text": "Follow the predefined directions for Option Five.", "source_id": "synthetic_001", "active": true},
+    {"recipe_id": "r999", "product_id": "p999", "predefined_recipe_text": "Inactive fixture directions.", "source_id": "synthetic_001", "active": false}
+  ],
+  "product_terms": [
+    {"product_id": "p001", "term_id": "goal_alpha", "relationship": "matches", "source_id": "synthetic_001"},
+    {"product_id": "p001", "term_id": "preference_beta", "relationship": "matches", "source_id": "synthetic_001"},
+    {"product_id": "p002", "term_id": "goal_alpha", "relationship": "matches", "source_id": "synthetic_001"},
+    {"product_id": "p002", "term_id": "preference_beta", "relationship": "matches", "source_id": "synthetic_001"},
+    {"product_id": "p003", "term_id": "goal_beta", "relationship": "matches", "source_id": "synthetic_001"},
+    {"product_id": "p004", "term_id": "preference_alpha", "relationship": "matches", "source_id": "synthetic_001"},
+    {"product_id": "p004", "term_id": "format_beta", "relationship": "matches", "source_id": "synthetic_001"},
+    {"product_id": "p005", "term_id": "goal_alpha", "relationship": "matches", "source_id": "synthetic_001"},
+    {"product_id": "p005", "term_id": "preference_gamma", "relationship": "excludes", "source_id": "synthetic_001"}
+  ],
+  "scoring_rules": [
+    {"rule_id": "rule_goal_alpha", "term_id": "goal_alpha", "relationship": "matches", "weight": 5, "predefined_reason_template": "Matches Goal Alpha.", "active": true, "source_id": "synthetic_001"},
+    {"rule_id": "rule_goal_beta", "term_id": "goal_beta", "relationship": "matches", "weight": 5, "predefined_reason_template": "Matches Goal Beta.", "active": true, "source_id": "synthetic_001"},
+    {"rule_id": "rule_goal_gamma", "term_id": "goal_gamma", "relationship": "matches", "weight": 5, "predefined_reason_template": "Matches Goal Gamma.", "active": true, "source_id": "synthetic_001"},
+    {"rule_id": "rule_preference_alpha", "term_id": "preference_alpha", "relationship": "matches", "weight": 3, "predefined_reason_template": "Matches Preference Alpha.", "active": true, "source_id": "synthetic_001"},
+    {"rule_id": "rule_preference_beta", "term_id": "preference_beta", "relationship": "matches", "weight": 3, "predefined_reason_template": "Matches Preference Beta.", "active": true, "source_id": "synthetic_001"},
+    {"rule_id": "rule_preference_gamma", "term_id": "preference_gamma", "relationship": "matches", "weight": 3, "predefined_reason_template": "Matches Preference Gamma.", "active": true, "source_id": "synthetic_001"},
+    {"rule_id": "rule_format_alpha", "term_id": "format_alpha", "relationship": "matches", "weight": 2, "predefined_reason_template": "Matches Format Alpha.", "active": true, "source_id": "synthetic_001"},
+    {"rule_id": "rule_format_beta", "term_id": "format_beta", "relationship": "matches", "weight": 2, "predefined_reason_template": "Matches Format Beta.", "active": true, "source_id": "synthetic_001"}
+  ],
+  "boundary_patterns": [
+    {"boundary_id": "b001", "normalised_phrase": "diagnose", "boundary_code": "DIAGNOSTIC_REQUEST", "predefined_response": "This prototype cannot diagnose or provide medical advice. Please consult a qualified healthcare professional.", "active": true},
+    {"boundary_id": "b002", "normalised_phrase": "treat", "boundary_code": "TREATMENT_REQUEST", "predefined_response": "This prototype cannot diagnose or provide medical advice. Please consult a qualified healthcare professional.", "active": true},
+    {"boundary_id": "b003", "normalised_phrase": "emergency", "boundary_code": "EMERGENCY_REQUEST", "predefined_response": "This prototype cannot handle emergencies. Contact the appropriate emergency service or a qualified healthcare professional.", "active": true},
+    {"boundary_id": "b004", "normalised_phrase": "medical advice", "boundary_code": "MEDICAL_ADVICE_REQUEST", "predefined_response": "This prototype cannot diagnose or provide medical advice. Please consult a qualified healthcare professional.", "active": true}
+  ]
+}

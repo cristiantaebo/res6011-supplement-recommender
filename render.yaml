@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: p17888-res6011-software-demo
+    runtime: python
+    plan: free
+    branch: main
+    autoDeployTrigger: "off"
+    buildCommand: python -m pip install -r artefact/P17888_Artefact_Submission/artefact/requirements-lock.txt
+    startCommand: python -m uvicorn deployment.asgi:app --host 0.0.0.0 --port $PORT --workers 1 --no-access-log
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.8
+      - key: PYTHONDONTWRITEBYTECODE
+        value: "1"

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Controlled non-medical matching prototype</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#request-text">Skip to request</a>
+  <header class="site-header">
+    <p class="eyebrow">Arden University computing project · P17888</p>
+    <h1>Controlled non-medical product matching</h1>
+    <p>A transparent local prototype that compares your words with a predefined product database.</p>
+  </header>
+
+  <main>
+    <section class="boundary-panel" aria-labelledby="boundary-title">
+      <h2 id="boundary-title">Informational prototype boundary</h2>
+      <p class="disclaimer">This local prototype is informational and non-medical. It uses only predefined data and rules, does not diagnose or treat, and does not replace advice from a qualified healthcare professional.</p>
+      <div class="scope-grid">
+        <p><strong>It can:</strong> recognise displayed criteria and rank predefined records using visible integer rules.</p>
+        <p><strong>It cannot:</strong> assess symptoms, diagnose, treat, establish safety or generate product facts.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="request-title">
+      <h2 id="request-title">Describe a supported request</h2>
+      <p id="request-help">Use the controlled choices below or enter a short request. Input is sent only to this local app and is not saved.</p>
+      <div id="supported-groups" class="supported-groups" aria-label="Supported predefined choices"></div>
+      <form id="request-form" novalidate>
+        <label for="request-text">Non-medical goal and preferences</label>
+        <textarea id="request-text" name="text" maxlength="500" rows="4" aria-describedby="request-help character-count" required></textarea>
+        <div class="form-meta">
+          <span id="character-count">500 characters remaining</span>
+          <span>No account, profile, cookie session or conversation history.</span>
+        </div>
+        <div class="actions">
+          <button id="submit-button" type="submit">Find matches</button>
+          <button id="reset-button" class="secondary" type="button">Start again</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="response-section" aria-labelledby="response-title">
+      <h2 id="response-title">Prototype response</h2>
+      <div id="status" class="status" role="status" aria-live="polite">Ready for a supported request.</div>
+      <div id="clarification" class="clarification" hidden></div>
+      <ol id="results" class="results" aria-label="Ranked predefined matches"></ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Local deterministic prototype · predefined data and rules only · no commercial deployment</p>
+  </footer>
+</body>
+</html>
