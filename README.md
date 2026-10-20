@@ -2,7 +2,9 @@
 
 [Source code](https://github.com/cristiantaebo/res6011-supplement-recommender)
 
-**Live application: not deployed or verified yet.** A hosting account and its no-additional-cost configuration must be verified first. No static page is presented as a working recommendation service.
+[Open live application](https://p17888-res6011-software-demo.onrender.com)
+
+The whole application is running on **Render Free**, with a real Python backend. Anonymous browser/API smoke checks passed on 20 October 2026: supported recommendations/explanations, reset, no match, ambiguity, unsupported input, configured medical boundaries and malformed input. These are deployment checks, not a rerun of the historical test suite or benchmarks.
 
 This P17888 software prototype uses a real Python/FastAPI backend, SQLite, and vanilla HTML/CSS/JavaScript. Controlled phrases select predefined criteria; integer rules rank stored product records and return stored explanations. There is no LLM or generated recommendation content.
 
@@ -36,9 +38,9 @@ The original [README](artefact/P17888_Artefact_Submission/artefact/README.md) is
 
 ## Online demonstration configuration
 
-The prepared Render configuration runs the **whole original application on one Python host**. The UI and API remain on the same HTTPS origin; GitHub Pages is not used as a pretend Python backend. The separate ASGI adapter only selects the original code path and a temporary demonstration database path. It does not replace or modify the matching engine, data, API contracts or interface.
+The Render configuration runs the **whole original application on one Python host**. The UI and API remain on the same HTTPS origin; GitHub Pages is not used as a pretend Python backend. The separate ASGI adapter only selects the original code path and a temporary demonstration database path. It does not replace or modify the matching engine, data, API contracts or interface.
 
-The intended compute plan is Render Free, with no database service or persistent disk. Account-level cost/usage settings must still be verified before creating it. Free services can sleep after inactivity; their SQLite runtime file is ephemeral and is reconstructed from the original seed. No keep-alive pings are configured. See [deployment instructions and limitations](deployment/README.md).
+The verified compute plan is Render Free, with no database service or persistent disk. Free services can sleep after 15 minutes without traffic and take approximately one minute to wake. Monthly usage limits can interrupt availability; no always-on reliability or future availability guarantee is made. SQLite runtime storage is ephemeral and is reconstructed from the original seed. No keep-alive pings are configured. See [deployment instructions and limitations](deployment/README.md).
 
 The frozen interface retains its original local-prototype wording. On an online copy, requests would be sent to its remote Python host, and that provider may retain technical access logs. The application has no accounts, history, analytics or raw-input logging; this is not a promise of zero hosting-provider logs. No additional data collection is configured.
 

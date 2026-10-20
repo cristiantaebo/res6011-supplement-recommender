@@ -33,7 +33,9 @@ The original ZIP itself is not publicly downloadable here because it contains ex
 - `render.yaml`: one Free Python web service, locked dependencies, one Uvicorn worker, platform host/port, disabled Uvicorn access log and health path. No disk, paid service, database migration, account, history or analytics resource is requested.
 - Root documentation/manifest and Git attributes/ignore settings: publication controls, not changes to original files.
 
-The whole-app same-origin option avoids modifying the frontend for a Pages subpath or different API URL and avoids unnecessary CORS middleware. No live deployment or anonymous browser result is certified until actual deployment verification is recorded.
+The whole-app same-origin option avoids modifying the frontend for a Pages subpath or different API URL and avoids unnecessary CORS middleware. The isolated demonstration is available at https://p17888-res6011-software-demo.onrender.com. Anonymous headless-browser checks on 20 October 2026 confirmed the actual UI/API flow, predefined output fields, reset and controlled outcome cases. Original HTML/CSS/JS served by the host were compared byte-for-byte with the snapshot. This is deployment evidence, not a new result for the historical 83-test suite or a hosting performance benchmark.
+
+Data-integrity evidence consists of unchanged source/seed hashes, original read-only request access and matching canonical response hashes before and after smoke scenarios. A direct hash of the running host's temporary database file was not measured; no SSH/admin/file-reading endpoint was added to obtain it.
 
 The original interface describes a local prototype. A hosted demonstration sends input to the remote host, which can produce infrastructure logs. That distinction does not change the original application bytes and must not be hidden in evaluation of an online copy.
 
